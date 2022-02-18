@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/css-grid-flexbox-combo-bmc7hMNpV](https://www.frontendmentor.io/solutions/css-grid-flexbox-combo-bmc7hMNpV)
+- Live Site URL: [https://valleyman89.github.io/FrontEndMentor-Solution-3-column-preview-card-component-main/](https://valleyman89.github.io/FrontEndMentor-Solution-3-column-preview-card-component-main/)
 
 ## My process
 
