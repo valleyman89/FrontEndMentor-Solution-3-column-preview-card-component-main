@@ -1,0 +1,125 @@
+body {
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  min-height: 95vh;
+  overflow: scroll;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  align-content: space-evenly;
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "card-one card-two card-three"
+    "footer footer footer";
+  justify-content: center;
+  justify-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card {
+  padding: 2rem;
+}
+.card-one {
+  background-color: hsl(31, 77%, 52%);
+  grid-area: card-one;
+}
+.card-two {
+  background-color: hsl(184, 100%, 22%);
+  grid-area: card-two;
+}
+.card-three {
+  background-color: hsl(179, 100%, 13%);
+  grid-area: card-three;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+p,
+button {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 32px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.button-one {
+  color: hsl(31, 77%, 52%);
+}
+.button-two {
+  color: hsl(184, 100%, 22%);
+}
+.button-three {
+  color: hsl(179, 100%, 13%);
+}
+.attribution {
+  font-size: 11px;
+  grid-area: footer;
+  min-height: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 815px) {
+  body {
+    max-width: max-content;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: max-content;
+  }
+  .card-one {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .card-three {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
+@media (min-width: 815px) {
+  .card-one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .card-three {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
